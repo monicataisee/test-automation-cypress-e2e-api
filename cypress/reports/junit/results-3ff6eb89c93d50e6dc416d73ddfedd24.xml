@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.847" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-04-28T18:59:17" tests="0" file="cypress/e2e/tests/scenariosTests/tests.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test Automation Project - E2E and API" timestamp="2024-04-28T18:59:17" tests="4" time="1.835" failures="1">
+    <testcase name="Test Automation Project - E2E and API E2E - Capture data from JSON and validate object data with id = 6 (example #1)" time="1.019" classname="E2E - Capture data from JSON and validate object data with id = 6 (example #1)">
+    </testcase>
+    <testcase name="Test Automation Project - E2E and API API - GET request looking for a specific object" time="0.051" classname="API - GET request looking for a specific object">
+    </testcase>
+    <testcase name="Test Automation Project - E2E and API API - POST request including a new user (example #1)" time="0.209" classname="API - POST request including a new user (example #1)">
+    </testcase>
+    <testcase name="Test Automation Project - E2E and API API - PUT request changing data of an object (example #1)" time="0.000" classname="API - PUT request changing data of an object (example #1)">
+      <failure message="expected &apos;Lucio_Hettinger@annie.ca&apos; to equal &apos;monica@test.com&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'Lucio_Hettinger@annie.ca' to equal 'monica@test.com'
+    at Context.eval (webpack://projeto-testes-cypress/./cypress/support/pages/Test/test_page.js:122:0)
+
+      + expected - actual
+
+      -'Lucio_Hettinger@annie.ca'
+      +'monica@test.com'
+      ]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
