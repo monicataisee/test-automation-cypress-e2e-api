@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.123" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-05-01T17:22:10" tests="0" file="cypress\e2e\tests\scenariosTests\tests.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test Automation Project - E2E and API" timestamp="2024-05-01T17:22:10" tests="4" time="4.100" failures="0">
+    <testcase name="Test Automation Project - E2E and API E2E - Capture data from JSON and validate object data with id = 6 (example #1)" time="2.814" classname="E2E - Capture data from JSON and validate object data with id = 6 (example #1)">
+    </testcase>
+    <testcase name="Test Automation Project - E2E and API API - GET request looking for a specific object" time="0.093" classname="API - GET request looking for a specific object">
+    </testcase>
+    <testcase name="Test Automation Project - E2E and API API - POST request including a new user (example #1)" time="0.520" classname="API - POST request including a new user (example #1)">
+    </testcase>
+    <testcase name="Test Automation Project - E2E and API API - PUT request changing data of an object (example #1)" time="0.523" classname="API - PUT request changing data of an object (example #1)">
+    </testcase>
+  </testsuite>
+</testsuites>

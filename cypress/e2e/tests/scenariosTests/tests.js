@@ -66,7 +66,6 @@ Then(/^the response status code for PUT should be "([^"]*)"$/, (statusCodePut) =
 	TestPage.validateStatusPut(statusCodePut)
 });
 
-Then(/^the data must be changed successfully "([^"]*)", "([^"]*)" e "([^"]*)" for user "([^"]*)"$/, (emailPut, lat, lgn, id) => {
-	TestPage.validateUpdateData(emailPut, lat, lgn, id)
-
+Then(/^the data must be sent successfully to change "([^"]*)", "([^"]*)" and "([^"]*)"$/, (emailPut,lat,lgn) => {
+    TestPage.validateUpdateData(emailPut, lat, lgn)
 });

@@ -63,8 +63,3 @@ The project is structured as follows:
 ### Testing evidence
 To have a better view of the test execution results, on your computer go to the folder where the project is located, navigate to cypress/reports/html and open the index.html file in the browser of your choice
 
-
-
-
-# Attention point:
-Test `Scenario: API - PUT request changing data of an object` fails because the data is not persisted when the PUT request is made, so when it compares the server value with the value sent in the PUT, the result is different.

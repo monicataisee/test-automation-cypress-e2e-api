@@ -116,17 +116,11 @@ class TestPage {
         cy.get('@userPut').its('status').should('eq', parseInt(statusCodePut))
     }
 
-    validateUpdateData(emailPut, lat, lgn, id) {
-        cy.request('GET', 'https://jsonplaceholder.typicode.com/users/' + id).then((response) => {
-            /// falhando pois não persiste os dados///
+    validateUpdateData(emailPut, lat, lgn) {
+        cy.get('@userPut').then((response) => {
             expect(response.body.email).to.equal(emailPut)
             expect(response.body.address.geo.lat).to.equal(lat)
             expect(response.body.address.geo.lng).to.equal(lgn)
-
-            //// validando dados corretos do user id=5 ///
-            // expect(response.body.email).to.equal('Lucio_Hettinger@annie.ca')
-            // expect(response.body.address.geo.lat).to.equal('-31.8129')
-            // expect(response.body.address.geo.lng).to.equal('62.5342')
         })
     }
 }

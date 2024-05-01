@@ -28,7 +28,7 @@ Scenario: API - POST request including a new user
 Scenario: API - PUT request changing data of an object
     Given I make a PUT to the endpoint users change "<email>", "<lat>" e "<lgn>" from user "<id>"
     Then the response status code for PUT should be "200"
-    And the data must be changed successfully "<email>", "<lat>" e "<lgn>" for user "<id>"
+    And the data must be sent successfully to change "<email>", "<lat>" and "<lgn>"
 
     Examples:
     |id|email          |lat       |lgn     |
